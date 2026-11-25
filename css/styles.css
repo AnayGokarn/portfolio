@@ -248,17 +248,17 @@ h2 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
 
 /* ---------- per-project theme (case-study content only; header/footer keep the site style) ---------- */
 main.is-themed { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-weight: 500; }
-main.is-themed h1, main.is-themed h2, main.is-themed h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0; }
+main.is-themed h1, main.is-themed h2, main.is-themed h3 { font-family: var(--font-display); font-weight: var(--display-weight, 400); letter-spacing: 0; }
 main.is-themed .cs-hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); }
 main.is-themed .eyebrow, main.is-themed .cs-pager a span { font-family: var(--font-sans); font-weight: 700; }
-main.is-themed .cs-stat strong { font-family: var(--font-display); }
-main.is-themed .cs-pager a { font-family: var(--font-display); font-weight: 400; }
+main.is-themed .cs-stat strong { font-family: var(--font-display); font-weight: var(--display-weight, 400); }
+main.is-themed .cs-pager a { font-family: var(--font-display); font-weight: var(--display-weight, 400); }
 main.is-themed .cs-facts { border-color: var(--line); }
 main.is-themed .cs-facts dt,
-main.is-themed .cs-table tbody th { font-family: var(--font-display); font-weight: 400; font-size: .9rem; letter-spacing: .06em; color: var(--text); }
+main.is-themed .cs-table tbody th { font-family: var(--font-display); font-weight: var(--display-weight, 400); font-size: .9rem; letter-spacing: .06em; color: var(--text); }
 main.is-themed .cs-table__hint { font-family: var(--font-sans); font-weight: 500; letter-spacing: 0; color: var(--muted); }
 main.is-themed .cs-quote p { font-family: var(--font-display); }
-main.is-themed .cs-table thead th { font-family: var(--font-display); font-weight: 400; }
+main.is-themed .cs-table thead th { font-family: var(--font-display); font-weight: var(--display-weight, 400); }
 main.is-themed .cs-table thead th:not(.is-hl) { background: transparent; } /* header row matches the table body; highlighted column keeps its colour */
 main.is-themed .wm-panel, main.is-themed .ui-demo { border: 3px solid var(--text); }
 main.is-themed .cs-cover__img { border: 3px solid var(--text); }

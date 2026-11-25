@@ -406,13 +406,14 @@
 
   // Optional per-project theme: restyles only the case-study content (<main>),
   // leaving the site header and footer untouched.
-  // theme: { bg, surface, text, muted, line, accent, accentInk, fontSans, fontDisplay, googleFonts }
+  // theme: { bg, surface, text, muted, line, accent, accentInk, fontSans, fontDisplay, displayWeight, googleFonts }
   function applyProjectTheme(t) {
     var main = el("main");
     if (!t || !main) return;
     loadGoogleFonts(t.googleFonts);
     var map = { bg: "--bg", surface: "--surface", text: "--text", muted: "--muted", line: "--line",
-      accent: "--accent", accentInk: "--accent-ink", fontSans: "--font-sans", fontDisplay: "--font-display" };
+      accent: "--accent", accentInk: "--accent-ink", fontSans: "--font-sans", fontDisplay: "--font-display",
+      displayWeight: "--display-weight" };
     Object.keys(map).forEach(function (k) { if (t[k]) main.style.setProperty(map[k], t[k]); });
     main.classList.add("is-themed");
   }
