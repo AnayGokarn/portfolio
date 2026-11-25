@@ -43,7 +43,7 @@ Everything happens in **`data/projects.js`**. Each project is one `{ ... }` bloc
 | `featured` | `true` shows the project in the home-page highlights. |
 | `year`, `role`, `tools`, `tags` | Shown in the case-study fact bar. The first 3 `tags` also show on the card. |
 | `sections` | The case-study content, rendered top to bottom (see below). |
-| `theme` | *(optional)* Restyle just this project's case-study page with its own colours and fonts. The site header and footer, and all other pages, stay the same. Keys: `bg`, `surface`, `text`, `muted`, `line`, `accent`, `accentInk`, `fontSans`, `fontDisplay`, `googleFonts`. See the Sprout project for an example. |
+| `theme` | *(optional)* Restyle just this project's case-study page with its own colours and fonts. The site header and footer, and all other pages, stay the same. Keys: `bg`, `surface`, `text`, `muted`, `line`, `accent`, `accentInk`, `fontSans`, `fontDisplay`, `displayWeight` (heading weight, default 400), `googleFonts`. See the Sprout project for an example. |
 
 ### Case-study section types
 
